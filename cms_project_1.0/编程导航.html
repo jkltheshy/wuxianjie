@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./node_modules/vue/dist/vue.js"></script>
+    <script src="./node_modules/vue-router/dist/vue-router.js"></script>
+</head>
+<body>
+    <div id="app"></div>
+    <script>
+        Vue.use(VueRouter);
+        let Home={
+            template:'<div>home</div>'
+        }
+        let News={
+            template:'<div>news</div>'
+        }
+        const Router=new VueRouter({
+            routes:[
+                {
+                    name:'home',
+                    path:'/',
+                    component:Home
+                },
+                {
+                    name:'news',
+                    path:'/news',
+                    component:News
+                }
+            ]
+        });
+        const vm=new Vue({
+            el:'#app',
+            router:Router,
+            template:`<div>
+                <span @click="fn1()" style="cursor:pointer;">首页</span>
+                <span @click="fn2()" style="cursor:pointer;">新闻</span>
+                <router-link :to="{name:'home'}">去首页</router-link>
+                <router-link :to="{name:'news'}">去新闻</router-link>
+                <router-view />
+            </div>`,
+            methods:{
+                fn1(){
+                    this.$router.push({name:'home'});
+                },
+                fn2(){
+                    this.$router.push({name:'news'});
+                }
+            }
+        });
+    </script>
+</body>
+</html>
