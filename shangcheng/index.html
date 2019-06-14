@@ -1,0 +1,1839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>蘑菇街商城</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- header头部区 -->
+        <div class="header">
+            <div class="head-center">
+                <a href="http://market.mogujie.com" target="_blank" class="logo"><img src="images/logo2.png" alt=""></a>
+                <form action="" class="search">
+                    <input type="text" placeholder="外套">
+                    <div class="head-div">
+                        <a href="">搜<span></span><img src="images/bottom.png" alt=""></a>
+                        <ul>
+                            <li><a href="">商品</a></li>
+                            <li><a href="">店铺</a></li>
+                        </ul>
+                    </div>
+                    <button type="submit"></button>
+                </form>
+                <ul>
+                    <li><a href=""><img src="images/xiaoxi.png" alt=""><span>消息</span></a></li>
+                    <li><a href=""><img src="images/shoucang.png" alt=""><span>收藏</span></a></li>
+                    <li><a href=""><img src="images/gouwuche.png" alt=""><span>购物车</span></a></li>
+                </ul>
+                <a href="" class="load"><img src="images/denglu.png" alt="">登录</a>
+            </div>
+        </div>
+        <!-- banner广告区 -->
+        <div class="banner">
+            <div class="banner-center">
+                <!-- 左边部分 -->
+                <div class="banner-left">
+                    <h2>
+                        <a href="">主题市场</a>
+                        <a href="">限时快抢</a>
+                    </h2>
+                    <ul class="banner-list">
+                        <li>
+                            <a href="">上衣</a>
+                            <a href="">秋冬外套<img src="images/redu.png" alt=""></a>
+                            <a href="">冬上新</a>
+                            <a href="">入冬套装</a>
+                        </li>
+                        <li>
+                            <a href="">裙子</a>
+                            <a href="">美裙套装<img src="images/redu.png" alt=""></a>
+                            <a href="">连衣裙<img src="images/redu.png" alt=""></a>
+                            <a href="">高腰裙</a>
+                        </li>
+                        <li>
+                            <a href="">裤子</a>
+                            <a href="">牛仔裤</a>
+                            <a href="">休闲裤</a>
+                            <a href="">打底裤</a>
+                        </li>
+                        <li>
+                            <a href="">女鞋</a>
+                            <a href="">单鞋</a>
+                            <a href="">休闲运动</a>
+                            <a href="">靴子<img src="images/redu.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="">包包</a>
+                            <a href="">双肩包<img src="images/redu.png" alt=""></a>
+                            <a href="">斜挎包</a>
+                            <a href="">迷你小包</a>
+                        </li>
+                        <li>
+                            <a href="">男友</a>
+                            <a href="">卫衣</a>
+                            <a href="">休闲裤</a>
+                            <a href="">休闲鞋<img src="images/redu.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="">运动</a>
+                            <a href="">运动套装<img src="images/redu.png" alt=""></a>
+                            <a href="">运动鞋</a>
+                            <a href="">小白鞋</a>
+                        </li>
+                        <li>
+                            <a href="">配饰</a>
+                            <a href="">帽子</a>
+                            <a href="">围巾</a>
+                            <a href="">眼镜框</a>
+                        </li>
+                        <li>
+                            <a href="">美妆</a>
+                            <a href="">护肤套装<img src="images/redu.png" alt=""></a>
+                            <a href="">面膜<img src="images/redu.png" alt=""></a>
+                            <a href="">护唇膏</a>
+                        </li>
+                        <li>
+                            <a href="">家居</a>
+                            <a href="">家居鞋</a>
+                            <a href="">四件套</a>
+                            <a href="">小家具</a>
+                        </li>
+                        <li>
+                            <a href="">内衣</a>
+                            <a href="">少女内衣</a>
+                            <a href="">睡衣</a>
+                            <a href="">内裤</a>
+                        </li>
+                        <li>
+                            <a href="">母婴</a>
+                            <a href="">新生儿<img src="images/redu.png" alt=""></a>
+                            <a href="">孕妇装</a>
+                            <a href="">萌宝童鞋</a>
+                        </li>
+                        <li>
+                            <a href="">电器</a>
+                            <a href="">手机壳</a>
+                            <a href="">卷发棒<img src="images/redu.png" alt=""></a>
+                            <a href="">移动电源</a>
+                        </li>
+                        <li>
+                            <a href="">食品</a>
+                            <a href="">超值零食<img src="images/redu.png" alt=""></a>
+                            <a href="">进口</a>
+                            <a href="">怀旧零食</a>
+                        </li>
+                    </ul>
+                    <!-- 随机颜色 -->
+                    <script>
+                        (function(){
+                            var oUl = document.getElementsByClassName('banner-list')[0];
+                            var aLi = oUl.getElementsByTagName('li');
+                            var aA = oUl.getElementsByTagName('a');
+                            var indexArr = new Array();
+                            var index = 0;
+                            for(var i=0; i<20; i++)
+                            {
+                                var flag = 0;
+                                var num = Math.floor(Math.random() * aA.length);
+                                while(flag < indexArr.length)
+                                {
+                                    if(indexArr[flag] == num)
+                                    {
+                                        num = Math.floor(Math.random() * aA.length);
+                                        flag = 0;
+                                    }
+                                    else
+                                    {
+                                        flag++;
+                                    }
+                                }
+                                indexArr[index++] = num;
+                            }
+                            for(var n=0; n<indexArr.length; n++)
+                            {
+                                aA[indexArr[n]].style.color = "rgb(255,68,102)";
+                            }
+                            for(var j=0; j<aLi.length; j++)
+                            {
+                                aLi[j].firstElementChild.style.color = "#333";
+                            }
+                        }())
+                    </script>
+                    <!-- 选项卡 -->
+                    <div class="menu">
+                        <div class="menu-left">
+                            <a href="" class="menu-zt">当季热卖</a>
+                            <a href="" class="menu-gd">更多 ></a>
+                            <p>
+                                <a href="">冬上新</a>
+                                <a href="">毛呢外套</a>
+                                <a href="">时尚套装</a>
+                                <a href="">风衣</a>
+                                <a href="">针织开衫</a>
+                                <a href="">加绒卫衣</a>
+                                <a href="">复古毛衣</a>
+                            </p>
+                            <a href="" class="menu-zt">流行新品</a>
+                            <a href="" class="menu-gd">更多 ></a>
+                            <p>
+                                <a href="">冬上新</a>
+                                <a href="">毛呢外套</a>
+                                <a href="">时尚套装</a>
+                                <a href="">风衣</a>
+                                <a href="">针织开衫</a>
+                                <a href="">加绒卫衣</a>
+                                <a href="">复古毛衣</a>
+                            </p>
+                            <a href="" class="menu-zt">潮流时尚</a>
+                            <a href="" class="menu-gd">更多 ></a>
+                            <p>
+                                <a href="">冬上新</a>
+                                <a href="">毛呢外套</a>
+                                <a href="">时尚套装</a>
+                                <a href="">风衣</a>
+                                <a href="">针织开衫</a>
+                                <a href="">加绒卫衣</a>
+                                <a href="">复古毛衣</a>
+                            </p>
+                        </div>
+                        <div class="menu-right">
+                            <span>/猜你喜欢/</span>
+                            <p>
+                                <a href="">
+                                    <img src="images/m1-1.webp" alt="">
+                                    <span>黑色打底衫冬季女秋2018新款韩版宽松女装百搭纯色chic长袖T恤女白色上衣服闺蜜装</span>
+                                </a>
+                                <a href="">
+                                    <img src="images/m1-2.webp" alt="">
+                                    <span>秋冬韩版chic风格子半身裙女2018新款毛呢中长款包臀裙复古开叉一步裙女显瘦气质长裙</span>
+                                </a>
+                                <a href="">
+                                    <img src="images/m1-3.webp" alt="">
+                                    <span>2018冬季新款韩版小清新少女显瘦海军风针织衫女慵懒风学生超火短款网红套头毛衣女</span>
+                                </a>
+                                <a href="">
+                                    <img src="images/m1-4.webp" alt="">
+                                    <span>LRUD棉衣女2018秋冬新款韩版宽松加厚棉服外套长袖POLO领学生上衣</span>
+                                </a>
+                                <a href="">
+                                    <img src="images/m1-5.webp" alt="">
+                                    <span>秋冬新款韩版加厚chic中长款侧开叉口袋毛毛绒仿皮草外套女潮</span>
+                                </a>
+                                <a href="">
+                                    <img src="images/m1-6.webp" alt="">
+                                    <span>呢子大衣秋冬韩版时尚气质学生纯色雾霾蓝2018新款系带过膝长款宽松长袖毛呢外套女</span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <script>
+                        (function(){
+                            var oUl = document.getElementsByClassName('banner-list')[0];
+                            var aLi = oUl.getElementsByTagName('li');
+                            var oMenu = document.getElementsByClassName('menu')[0];
+                            var oMenuL = oMenu.getElementsByClassName('menu-left')[0];
+                            var aMenuLP = oMenuL.getElementsByTagName('p');
+                            var oMenuR = oMenu.getElementsByClassName('menu-right')[0];
+                            var aMenuRA = oMenuR.getElementsByTagName('a');
+                            var aMenuRSArr = new Array();
+                            aMenuRSArr[0] = ["黑色打底衫冬季女秋2018新款韩版宽松女装百搭纯色chic长袖T恤女白色上衣服闺蜜装",
+                                            "秋冬韩版chic风格子半身裙女2018新款毛呢中长款包臀裙复古开叉一步裙女显瘦气质长裙",
+                                            "2018冬季新款韩版小清新少女显瘦海军风针织衫女慵懒风学生超火短款网红套头毛衣女",
+                                            "LRUD棉衣女2018秋冬新款韩版宽松加厚棉服外套长袖POLO领学生上衣",
+                                            "秋冬新款韩版加厚chic中长款侧开叉口袋毛毛绒仿皮草外套女潮",
+                                            "呢子大衣秋冬韩版时尚气质学生纯色雾霾蓝2018新款系带过膝长款宽松长袖毛呢外套女"];
+                            aMenuRSArr[1] = ["秋冬新款韩版bf风百搭下摆条纹针织裤小脚哈伦裤女学生萝卜裤宽松显瘦毛线裤九分休闲裤",
+                                            "秋冬韩版chic风格子半身裙女2018新款毛呢中长款包臀裙复古开叉一步裙女显瘦气质长裙",
+                                            "冬新款百搭小清新甜美中长款过膝宽松长袖针织连衣裙学院风修身显瘦高领打底毛衣裙打底连衣裙",
+                                            "2018秋冬韩版新款纯色淑女气质圆领高腰宽松显瘦百搭长袖喇叭袖中长款打底针织连衣裙女",
+                                            "秋季新款时尚休闲女装裙2018秋冬拼接蕾丝娃娃领闪超仙腰带粉色长袖气质连衣裙女",
+                                            "高腰新款针织半身裙女秋冬季中长款韩系显瘦包臀裙子一步裙毛线裙时尚职业百搭显瘦修身后开叉冬裙"];
+                            aMenuRSArr[2] = ["欧美时尚加绒短靴女2018秋冬季新款绒面金属扣粗跟女鞋高跟后拉链短筒气质马丁靴女裸靴",
+                                            "毛呢阔腿短裤女秋冬季2018新款韩版外穿百搭高腰显瘦腰带休闲裤靴",
+                                            "秋装新款文艺复古纯色高腰2粒扣紧身弹力显瘦",
+                                            "2018秋冬韩版新款纯色淑女气质圆领高腰宽松显瘦",
+                                            "毛呢哈伦裤女秋冬韩版学生百搭宽松阔腿裤高腰九分小脚休闲萝卜裤",
+                                            "金丝绒短裤女高腰秋冬季运动休闲宽松a字阔腿外穿加绒加厚靴裤"];
+                            aMenuRSArr[3] = ["欧美时尚加绒短靴女2018秋冬季新款",
+                                            "棉鞋女2018冬季韩版新款加绒加厚帆布鞋百搭学生保暖山本风板鞋女",
+                                            "黑色运动鞋女百搭圆头网红ins超火的鞋子女秋韩版学生休闲跑步鞋新款冬季加绒",
+                                            "韩国魔术裤女薄款2018新款小脚铅笔弹力小黑长裤秋季高腰外穿加绒加厚打底裤",
+                                            "不掉筒显瘦2018秋冬季新款圆头长筒靴平跟过膝靴弹力靴平底长靴女",
+                                            "金丝绒短裤女高腰秋冬季运动休闲宽松a字阔腿外穿加绒加厚靴裤"];
+                            aMenuRSArr[4] = ["【梵花不语】原创纯色休闲帆布包女双肩包女包抽带学院风旅行背包",
+                                            "韩版单肩托特包大包包简约斜挎包购物袋韩国学生休闲女包大容量潮",
+                                            "化妆包简约韩国迷你洗漱包防水小号便携手拿随身旅行收纳包袋",
+                                            "ins超火质感包包女2018新款潮韩版chic百搭斜挎时尚单肩包秋冬款",
+                                            "拼接车缝水桶包2018秋冬新款女包欧美时尚单肩包",
+                                            "休闲欧美品牌新款女中包手提包单肩包斜挎包百搭时尚实用女包包潮"];
+                            aMenuLPArr = new Array();
+                            aMenuLPArr[0] = ["冬上新","毛呢外套","时尚套装","风衣","针织开衫","加绒卫衣","复古毛衣"]
+                            aMenuLPArr[1] = ["休闲裤","破洞牛仔裤","磨边牛仔裤","短裤","连体裤","直筒裤喇叭裤","宽松牛仔裤"];
+                            aMenuLPArr[2] = ["性感V领","喇叭袖","刺绣","情侣装","经典格纹","百搭圆领","荷叶边","绑带衬衫","条纹控","白衬衫","显瘦衬衣"];
+                            var numArr = new Array();
+                            var colorArr = new Array();
+                            var timer = 0;
+                            oUl.onmouseover = function()
+                            {
+                                clearTimeout(timer);
+                                oMenu.style.display = "block";
+                            }
+                            oUl.onmouseout = function()
+                            {
+                                timer = setTimeout(function(){oMenu.style.display = "none";},300);
+                            }
+                            oMenu.onmouseover = function()
+                            {
+                                clearTimeout(timer);
+                                oMenu.style.display = "block";
+                            }
+                            oMenu.onmouseout = function()
+                            {
+                                oMenu.style.display = "none";
+                            }
+                            for(var n=0; n<aLi.length; n++)
+                            {
+                                aLi[n].index = n + 1;
+                                aLi[n].onmouseover = function()
+                                {
+                                    for(var i=0; i<aMenuRA.length; i++)
+                                    {
+                                        let flag = 0;
+                                        var num = Math.floor(Math.random() * aMenuRSArr.length);
+                                        while(flag < numArr.length)
+                                        {
+                                            if(num == numArr[flag])
+                                            {
+                                                num = Math.floor(Math.random() * aMenuRSArr.length);
+                                                flag = 0;
+                                            }
+                                            else
+                                            {
+                                                flag++;
+                                            }
+                                        }
+                                        numArr[0] = num;
+                                        aMenuRA[i].lastElementChild.innerHTML = aMenuRSArr[num][i];
+                                        aMenuRA[i].firstElementChild.src = "images/m" + this.index + "-" + (i+1) + ".webp";
+                                    }
+                                    for(var j=0; j<aMenuLP.length; j++)
+                                    {
+                                        aMenuLP[j].innerHTML = "<a href=''>" + this.children[j+1].innerText + "</a>" + "<a href=''>" + aMenuLPArr[j].join("</a><a href=''>") + "</a>";
+                                        var aMenuLPA = aMenuLP[j].getElementsByTagName('a');
+                                        for(var m=0; m<4; m++)
+                                        {
+                                            var colorNum = Math.floor(Math.random() * aMenuLPA.length);
+                                            colorArr[m] = colorNum;
+                                        }
+                                        for(var x=0; x<colorArr.length; x++)
+                                        {
+                                            aMenuLPA[colorArr[x]].style.color = "rgb(255,68,102)";
+                                        }
+                                    }
+                                }
+                            }
+                        }())
+                    </script>
+                </div>
+                <!-- 中间部分 -->
+                <div class="banner-middle">
+                    <ul>
+                        <li><a href=""><img src="images/b1.jpg" alt=""></a></li>
+                        <li><a href=""><img src="images/b2.jpg" alt=""></a></li>
+                    </ul>
+                    <a href="" class="banner-a"></a>
+                    <a href="" class="banner-a"></a>
+                </div>
+                <!-- 右边部分 -->
+                <div class="banner-right">
+                    <ul>
+                        <li>
+                            <a href=""><img src="images/tou.png" alt=""></a>
+                            <span>菇凉好！ 欢迎来逛蘑菇街~</span>
+                            <a href="">会员中心</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>邀请好友</span>
+                                <span>共享收益分红</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- flash-sale限时抢购 -->
+        <div class="flash-sale">
+            <div class="flash-sale-center">
+                <div class="flash-left">
+                    <p>
+                        <span>00</span>
+                        <i>:</i>
+                        <span>00</span>
+                        <i>:</i>
+                        <span>00</span>
+                    </p>
+                </div>
+                <div class="flash-right">
+                    <ul>
+                        <li>
+                            <ul>
+                                <li>
+                                    <a href=""><img src="images/f1.webp" alt=""></a>
+                                    <a href="">高腰pu皮裤短裤女2018秋冬季新款外穿加薄绒阔腿裤女韩版宽松休闲靴裤潮</a>
+                                    <span>￥35.00</span>
+                                    <span>￥98.58</span>
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/f2.webp" alt=""></a>
+                                    <a href="">韩版粗跟过膝长靴女冬季2018新款百搭圆头后绑带显瘦弹力靴袜靴高筒瘦瘦靴</a>
+                                    <span>￥69.90</span>
+                                    <span>￥125.72</span>
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/f3.webp" alt=""></a>
+                                    <a href="">2018秋冬季新款女装宽松韩版拼色呢子大衣中长款显瘦时尚毛呢外套</a>
+                                    <span>￥119.00</span>
+                                    <span>￥225.72</span>
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/f4.webp" alt=""></a>
+                                    <a href="">半高领毛衣女加厚保暖套头短款宽松打底衫毛线衣2018秋季新款韩版时尚百搭气质</a>
+                                    <span>￥55.00</span>
+                                    <span>￥97.15</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <a href=""><img src="images/f5.webp" alt=""></a>
+                                    <a href="">韩版面包服加厚棉服女</a>
+                                    <span>￥99.90</span>
+                                    <span>￥216.50</span>
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/f6.webp" alt=""></a>
+                                    <a href="">性感蕾丝聚拢内衣套装</a>
+                                    <span>￥45.50</span>
+                                    <span>￥98.58</span>
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/f7.webp" alt=""></a>
+                                    <a href="">半高领毛衣女加厚保暖套头短款宽松打底衫毛线衣2018秋季新款韩版时尚百搭气质</a>
+                                    <span>￥119.00</span>
+                                    <span>￥227.15</span>
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/f8.webp" alt=""></a>
+                                    <a href="">半高领毛衣女加厚保暖套头短款宽松打底衫毛线衣2018秋季新款韩版时尚百搭气质</a>
+                                    <span>￥55.00</span>
+                                    <span>￥97.15</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <a href=""><img src="images/f9.webp" alt=""></a>
+                                    <a href="">半高领毛衣女加厚保暖套头短款宽松打底衫毛线衣2018秋季新款韩版时尚百搭气质</a>
+                                    <span>￥55.00</span>
+                                    <span>￥97.15</span>
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/f10.webp" alt=""></a>
+                                    <a href="">半高领毛衣女加厚保暖套头短款宽松打底衫毛线衣2018秋季新款韩版时尚百搭气质</a>
+                                    <span>￥55.00</span>
+                                    <span>￥97.15</span>
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/f11.webp" alt=""></a>
+                                    <a href="">半高领毛衣女加厚保暖套头短款宽松打底衫毛线衣2018秋季新款韩版时尚百搭气质</a>
+                                    <span>￥55.00</span>
+                                    <span>￥97.15</span>
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/f12.webp" alt=""></a>
+                                    <a href="">半高领毛衣女加厚保暖套头短款宽松打底衫毛线衣2018秋季新款韩版时尚百搭气质</a>
+                                    <span>￥55.00</span>
+                                    <span>￥97.15</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <a href=""><img src="images/f13.webp" alt=""></a>
+                                    <a href="">半高领毛衣女加厚保暖套头短款宽松打底衫毛线衣2018秋季新款韩版时尚百搭气质</a>
+                                    <span>￥55.00</span>
+                                    <span>￥97.15</span>
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/f14.webp" alt=""></a>
+                                    <a href="">半高领毛衣女加厚保暖套头短款宽松打底衫毛线衣2018秋季新款韩版时尚百搭气质</a>
+                                    <span>￥55.00</span>
+                                    <span>￥97.15</span>
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/f15.webp" alt=""></a>
+                                    <a href="">半高领毛衣女加厚保暖套头短款宽松打底衫毛线衣2018秋季新款韩版时尚百搭气质</a>
+                                    <span>￥55.00</span>
+                                    <span>￥97.15</span>
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/f16.webp" alt=""></a>
+                                    <a href="">半高领毛衣女加厚保暖套头短款宽松打底衫毛线衣2018秋季新款韩版时尚百搭气质</a>
+                                    <span>￥55.00</span>
+                                    <span>￥97.15</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="" class="flash-right-a"><img src="images/left.png" alt=""></a>
+                    <a href="" class="flash-right-a"><img src="images/right.png" alt=""></a>
+                </div>
+                <div class="flash-bottom">
+                    <ul>
+                        <li><a href=""><img src="images/flash1.webp" alt=""></a></li>
+                        <li><a href=""><img src="images/flash2.webp" alt=""></a></li>
+                        <li><a href=""><img src="images/flash3.webp" alt=""></a></li>
+                        <li><a href=""><img src="images/flash4.webp" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- content-top內容 -->
+        <div class="content-top">
+            <div class="content-center">
+                <h3>女装</h3>
+                <ul>
+                    <li><a href="">秋冬外套</a></li>
+                    <li><a href="">毛呢外套</a></li>
+                    <li><a href="">连衣裙</a></li>
+                    <li><a href="">牛仔外套</a></li>
+                    <li><a href="">牛仔裤</a></li>
+                    <li><a href="">宽松毛衣</a></li>
+                </ul>
+                <div class="content-left">
+                    <ul>
+                        <li><a href=""><img src="images/c1-1.webp" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="content-top-right">
+                    <div class="content-top-right-top">
+                        <ul>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/c1-11.webp" alt="">
+                                            <span>秋冬时尚套装两件套女冬季新款韩版宽松休闲小清新短款棉衣外套学生百搭显瘦高腰小脚裤牛仔裤</span>
+                                            <i>￥59</i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/c1-12.webp" alt="">
+                                            <span>秋冬新款网红超火翻领小心机后背扣子宽松百搭短款显瘦羊羔毛外套女+中长款针织裙打底包臀裙套装</span>
+                                            <i>￥89.6</i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/c1-13.webp" alt="">
+                                            <span>2018秋季新款韩版原宿风小清新宽松百搭迷彩连帽长袖短款卫衣+高腰显瘦直筒休闲裤时尚套装女</span>
+                                            <i>￥68</i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/c1-14.webp" alt="">
+                                            <span>秋冬新款韩版可爱泰迪加厚短款皮毛一体chic仿羊羔毛外套女+毛呢哈伦裤萝卜裤小脚裤休闲套装</span>
+                                            <i>￥79.8</i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/c1-15.webp" alt="">
+                                            <span>秋冬时尚套装两件套女冬季新款韩版宽松休闲小清新短款棉衣外套学生百搭显瘦高腰小脚裤牛仔裤</span>
+                                            <i>￥34.3</i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/c1-16.webp" alt="">
+                                            <span>秋冬新款网红超火翻领小心机后背扣子宽松百搭短款显瘦羊羔毛外套女+中长款针织裙打底包臀裙套装</span>
+                                            <i>￥79.9</i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/c1-17.webp" alt="">
+                                            <span>2018秋季新款韩版原宿风小清新宽松百搭迷彩连帽长袖短款卫衣+高腰显瘦直筒休闲裤时尚套装女</span>
+                                            <i>￥78</i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/c1-18.webp" alt="">
+                                            <span>秋冬新款韩版可爱泰迪加厚短款皮毛一体chic仿羊羔毛外套女+毛呢哈伦裤萝卜裤小脚裤休闲套装</span>
+                                            <i>￥55</i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/c1-19.webp" alt="">
+                                            <span>秋冬时尚套装两件套女冬季新款韩版宽松休闲小清新短款棉衣外套学生百搭显瘦高腰小脚裤牛仔裤</span>
+                                            <i>￥85.9</i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/c1-20.webp" alt="">
+                                            <span>秋冬新款网红超火翻领小心机后背扣子宽松百搭短款显瘦羊羔毛外套女+中长款针织裙打底包臀裙套装</span>
+                                            <i>￥47.7</i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/c1-21.webp" alt="">
+                                            <span>2018秋季新款韩版原宿风小清新宽松百搭迷彩连帽长袖短款卫衣+高腰显瘦直筒休闲裤时尚套装女</span>
+                                            <i>￥79.9</i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/c1-22.webp" alt="">
+                                            <span>秋冬新款韩版可爱泰迪加厚短款皮毛一体chic仿羊羔毛外套女+毛呢哈伦裤萝卜裤小脚裤休闲套装</span>
+                                            <i>￥110.5</i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/c1-23.webp" alt="">
+                                            <span>秋冬时尚套装两件套女冬季新款韩版宽松休闲小清新短款棉衣外套学生百搭显瘦高腰小脚裤牛仔裤</span>
+                                            <i>￥23.5</i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/c1-24.webp" alt="">
+                                            <span>秋冬新款网红超火翻领小心机后背扣子宽松百搭短款显瘦羊羔毛外套女+中长款针织裙打底包臀裙套装</span>
+                                            <i>￥78.9</i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/c1-25.webp" alt="">
+                                            <span>2018秋季新款韩版原宿风小清新宽松百搭迷彩连帽长袖短款卫衣+高腰显瘦直筒休闲裤时尚套装女</span>
+                                            <i>￥34</i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/c1-26.webp" alt="">
+                                            <span>秋冬新款韩版可爱泰迪加厚短款皮毛一体chic仿羊羔毛外套女+毛呢哈伦裤萝卜裤小脚裤休闲套装</span>
+                                            <i>￥95</i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="" class="content-top-a"><img src="images/left.png" alt="" title="上一张"></a>
+                        <a href="" class="content-top-a"><img src="images/right.png" alt="" title="上一张"></a>
+                    </div>
+                    <ul  class="content-top-right-bottom">
+                        <li><a href=""><img src="images/c1-3.webp" alt=""></a></li>
+                        <li><a href=""><img src="images/c1-4.webp" alt=""></a></li>
+                        <li><a href=""><img src="images/c1-5.webp" alt=""></a></li>
+                        <li><a href=""><i>毛呢外套</i><i>秋冬衣柜必备单品</i><span><img src="images/c1-6.webp" alt=""></span></a></li>
+                        <li><a href=""><i>秋冬裙装</i><i>慵懒知性 气质up</i><span><img src="images/c1-7.webp" alt=""></span></a></li>
+                        <li><a href=""><i>针织毛衣</i><i>冬天就要又暖又软~</i><span><img src="images/c1-8.webp" alt=""></span></a></li>
+                        <li><a href=""><i>牛仔裤</i><i>显瘦保暖皆必备</i><span><img src="images/c1-9.webp" alt=""></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- content内容区 -->
+        <div class="content">
+            <div class="content-center">
+                <h3>女鞋&包包</h3>
+                <ul>
+                    <li><a href="">靴子</a></li>
+                    <li><a href="">单鞋</a></li>
+                    <li><a href="">运动鞋</a></li>
+                    <li><a href="">休闲鞋</a></li>
+                    <li><a href="">帆布鞋</a></li>
+                </ul>
+                <div class="content-left">
+                    <ul>
+                        <li><a href=""><img src="images/c2-1.webp" alt=""></a></li>
+                        <li><a href=""><img src="images/c2-2.webp" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="content-middle">
+                    <ul>
+                        <li>
+                            <p>
+                                <a href="">
+                                    <img src="images/c2-2-1.webp" alt="">
+                                    <span>针织弹力靴女2018新款秋冬单靴韩版中筒靴高跟短靴粗跟瘦瘦靴袜靴</span>
+                                    <i>￥87</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-2.webp" alt="">
+                                    <span>2018新款长靴子女冬季英伦中跟过膝靴加绒骑士靴拉链粗跟长筒马靴</span>
+                                    <i>￥187</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-3.webp" alt="">
+                                    <span>靴子女小跟短靴女春秋2018新款粗跟平底马丁靴英伦风短筒韩版百搭短靴女</span>
+                                    <i>￥69.9</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-4.webp" alt="">
+                                    <span>【梵花不语】原创纯色休闲帆布包女双肩包女包抽带学院风旅行背包</span>
+                                    <i>￥63.7</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-5.webp" alt="">
+                                    <span>2018新款夏天金属镂空链条迷你小方包单肩斜挎韩版晚宴手拿包包女</span>
+                                    <i>￥67.2</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-6.webp" alt="">
+                                    <span>韩版单肩托特包大包包简约斜挎包购物袋韩国学生休闲女包大容量潮</span>
+                                    <i>￥55</i>
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="">
+                                    <img src="images/c2-2-7.webp" alt="">
+                                    <span>针织弹力靴女2018新款秋冬单靴韩版中筒靴高跟短靴粗跟瘦瘦靴袜靴</span>
+                                    <i>￥80</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-8.webp" alt="">
+                                    <span>2018新款长靴子女冬季英伦中跟过膝靴加绒骑士靴拉链粗跟长筒马靴</span>
+                                    <i>￥47</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-9.webp" alt="">
+                                    <span>靴子女小跟短靴女春秋2018新款粗跟平底马丁靴英伦风短筒韩版百搭短靴女</span>
+                                    <i>￥67.3</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-10.webp" alt="">
+                                    <span>【梵花不语】原创纯色休闲帆布包女双肩包女包抽带学院风旅行背包</span>
+                                    <i>￥112</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-11.webp" alt="">
+                                    <span>2018新款夏天金属镂空链条迷你小方包单肩斜挎韩版晚宴手拿包包女</span>
+                                    <i>￥135</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-12.webp" alt="">
+                                    <span>韩版单肩托特包大包包简约斜挎包购物袋韩国学生休闲女包大容量潮</span>
+                                    <i>￥78</i>
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="">
+                                    <img src="images/c2-2-13.webp" alt="">
+                                    <span>针织弹力靴女2018新款秋冬单靴韩版中筒靴高跟短靴粗跟瘦瘦靴袜靴</span>
+                                    <i>￥79</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-14.webp" alt="">
+                                    <span>2018新款长靴子女冬季英伦中跟过膝靴加绒骑士靴拉链粗跟长筒马靴</span>
+                                    <i>￥43.3</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-15.webp" alt="">
+                                    <span>靴子女小跟短靴女春秋2018新款粗跟平底马丁靴英伦风短筒韩版百搭短靴女</span>
+                                    <i>￥39.9</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-16.webp" alt="">
+                                    <span>【梵花不语】原创纯色休闲帆布包女双肩包女包抽带学院风旅行背包</span>
+                                    <i>￥187</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-17.webp" alt="">
+                                    <span>2018新款夏天金属镂空链条迷你小方包单肩斜挎韩版晚宴手拿包包女</span>
+                                    <i>￥65</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-18.webp" alt="">
+                                    <span>韩版单肩托特包大包包简约斜挎包购物袋韩国学生休闲女包大容量潮</span>
+                                    <i>￥27</i>
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="">
+                                    <img src="images/c2-2-19.webp" alt="">
+                                    <span>针织弹力靴女2018新款秋冬单靴韩版中筒靴高跟短靴粗跟瘦瘦靴袜靴</span>
+                                    <i>￥71.3</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-20.webp" alt="">
+                                    <span>2018新款长靴子女冬季英伦中跟过膝靴加绒骑士靴拉链粗跟长筒马靴</span>
+                                    <i>￥99.9</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-21.webp" alt="">
+                                    <span>靴子女小跟短靴女春秋2018新款粗跟平底马丁靴英伦风短筒韩版百搭短靴女</span>
+                                    <i>￥41.2</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-22.webp" alt="">
+                                    <span>【梵花不语】原创纯色休闲帆布包女双肩包女包抽带学院风旅行背包</span>
+                                    <i>￥139</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c-2-23.webp" alt="">
+                                    <span>2018新款夏天金属镂空链条迷你小方包单肩斜挎韩版晚宴手拿包包女</span>
+                                    <i>￥47.5</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c-2-24.webp" alt="">
+                                    <span>韩版单肩托特包大包包简约斜挎包购物袋韩国学生休闲女包大容量潮</span>
+                                    <i>￥76</i>
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="">
+                                    <img src="images/c-2-25.webp" alt="">
+                                    <span>针织弹力靴女2018新款秋冬单靴韩版中筒靴高跟短靴粗跟瘦瘦靴袜靴</span>
+                                    <i>￥96</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c-2-26.webp" alt="">
+                                    <span>2018新款长靴子女冬季英伦中跟过膝靴加绒骑士靴拉链粗跟长筒马靴</span>
+                                    <i>￥27</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c-2-27.webp" alt="">
+                                    <span>靴子女小跟短靴女春秋2018新款粗跟平底马丁靴英伦风短筒韩版百搭短靴女</span>
+                                    <i>￥45</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c-2-28.webp" alt="">
+                                    <span>【梵花不语】原创纯色休闲帆布包女双肩包女包抽带学院风旅行背包</span>
+                                    <i>￥73.5</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c-2-29.webp" alt="">
+                                    <span>2018新款夏天金属镂空链条迷你小方包单肩斜挎韩版晚宴手拿包包女</span>
+                                    <i>￥56.7</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c-2-30.webp" alt="">
+                                    <span>韩版单肩托特包大包包简约斜挎包购物袋韩国学生休闲女包大容量潮</span>
+                                    <i>￥137</i>
+                                </a>
+                            </p>
+                        </li>
+                    </ul>
+                    <p></p>
+                </div>
+                <div class="content-right">
+                    <span>热销商品推荐</span>
+                    <a href=""><img src="images/shuaxin.png" alt="">换一批</a>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-1.webp" alt="">
+                                <span>包包女2018新款秋冬百搭复古斜挎包ins超火小方包时尚休闲单肩包手提包小</span>
+                                <i>￥65.00</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-2.webp" alt="">
+                                <span>靴子女2018秋冬季新款系带原宿马丁靴女学生英伦风粗跟复古百搭加绒短靴</span>
+                                <i>￥79.00</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-3.webp" alt="">
+                                <span>二棉鞋女2018新款冬季百搭学生韩版加绒ins帆布鞋高帮板鞋子超火</span>
+                                <i>￥39.90</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-4.webp" alt="">
+                                <span>蓓尔明星同款帆布鞋女ins超火高帮学生布鞋平底系带小白鞋港风情侣鞋女鞋子休闲板鞋</span>
+                                <i>￥69.90</i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-5.webp" alt="">
+                                <span>前拉链短靴女2018秋冬新款百搭拼色女靴子瘦瘦马丁靴加绒机车靴潮</span>
+                                <i>￥79.00</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-6.webp" alt="">
+                                <span>显瘦腿弹力靴子女平底长筒靴2018韩版百搭学生秋冬季新款女鞋英伦风过膝长靴女高跟加绒高筒靴</span>
+                                <i>￥118.00</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-7.webp" alt="">
+                                <span>ins马丁靴子女加绒2018秋冬季新款网红女鞋韩版百搭小短靴短筒袜矮靴</span>
+                                <i>￥62.90</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-8.webp" alt="">
+                                <span>YE蓓尔冬季新款热卖英伦风马丁靴</span>
+                                <i>￥199.00</i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-9.webp" alt="">
+                                <span>迷你小双肩包女韩版包包女斜挎包2018新款百搭毛呢小包背包多用单肩斜挎包ins超火包</span>
+                                <i>￥59.00</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-10.webp" alt="">
+                                <span>街拍网红靴子女2018秋季新款英伦风复古短靴女学生粗跟系带百搭马丁靴</span>
+                                <i>￥79.00</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-11.webp" alt="">
+                                <span>老爹鞋女2018秋冬季新款韩版休闲运动鞋百搭原宿风厚底小白鞋学生跑步鞋ins超火的女鞋子潮</span>
+                                <i>￥88.00</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-12.webp" alt="">
+                                <span>蓓尔明星同款韩版夏季透气小白鞋新款女鞋子蝴蝶结包头半拖帆布鞋女学生百搭系带板鞋</span>
+                                <i>￥59.00</i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-13.webp" alt="">
+                                <span>小包包仙女2018新款潮韩版百搭单肩斜挎包帆布ins超火honey蹦迪包</span>
+                                <i>￥62.50</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-14.webp" alt="">
+                                <span>【梵花不语】2018早春新品日系笑脸印花帆布包女单肩包女包文艺手提袋</span>
+                                <i>￥56.00</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-15.webp" alt="">
+                                <span>【69元任选两双】环球女鞋ins超火的小白鞋子新款韩版休闲鞋百搭女学生板鞋chic秋</span>
+                                <i>￥69.00</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-16.webp" alt="">
+                                <span>蓓尔明星同款秋季韩版百搭小白鞋平底白色系带学生板鞋女鞋运动休闲鞋</span>
+                                <i>￥69.00</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-center">
+                <h3>男友&运动</h3>
+                <ul>
+                    <li><a href="">冬上新</a></li>
+                    <li><a href="">万能衬衫</a></li>
+                    <li><a href="">牛仔裤</a></li>
+                    <li><a href="">潮鞋</a></li>
+                    <li><a href="">卫衣</a></li>
+                </ul>
+                <div class="content-left">
+                    <ul>
+                        <li><a href=""><img src="images/c3-1.webp" alt=""></a></li>
+                        <li><a href=""><img src="images/c3-2.webp" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="content-middle">
+                    <ul>
+                        <li>
+                            <p>
+                                <a href="">
+                                    <img src="images/c2-2-1.webp" alt="">
+                                    <span>针织弹力靴女2018新款秋冬单靴韩版中筒靴高跟短靴粗跟瘦瘦靴袜靴</span>
+                                    <i>￥87</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-2.webp" alt="">
+                                    <span>2018新款长靴子女冬季英伦中跟过膝靴加绒骑士靴拉链粗跟长筒马靴</span>
+                                    <i>￥187</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-3.webp" alt="">
+                                    <span>靴子女小跟短靴女春秋2018新款粗跟平底马丁靴英伦风短筒韩版百搭短靴女</span>
+                                    <i>￥69.9</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-4.webp" alt="">
+                                    <span>【梵花不语】原创纯色休闲帆布包女双肩包女包抽带学院风旅行背包</span>
+                                    <i>￥63.7</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-5.webp" alt="">
+                                    <span>2018新款夏天金属镂空链条迷你小方包单肩斜挎韩版晚宴手拿包包女</span>
+                                    <i>￥67.2</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-6.webp" alt="">
+                                    <span>韩版单肩托特包大包包简约斜挎包购物袋韩国学生休闲女包大容量潮</span>
+                                    <i>￥55</i>
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="">
+                                    <img src="images/c2-2-7.webp" alt="">
+                                    <span>针织弹力靴女2018新款秋冬单靴韩版中筒靴高跟短靴粗跟瘦瘦靴袜靴</span>
+                                    <i>￥80</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-8.webp" alt="">
+                                    <span>2018新款长靴子女冬季英伦中跟过膝靴加绒骑士靴拉链粗跟长筒马靴</span>
+                                    <i>￥47</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-9.webp" alt="">
+                                    <span>靴子女小跟短靴女春秋2018新款粗跟平底马丁靴英伦风短筒韩版百搭短靴女</span>
+                                    <i>￥67.3</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-10.webp" alt="">
+                                    <span>【梵花不语】原创纯色休闲帆布包女双肩包女包抽带学院风旅行背包</span>
+                                    <i>￥112</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-11.webp" alt="">
+                                    <span>2018新款夏天金属镂空链条迷你小方包单肩斜挎韩版晚宴手拿包包女</span>
+                                    <i>￥135</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-12.webp" alt="">
+                                    <span>韩版单肩托特包大包包简约斜挎包购物袋韩国学生休闲女包大容量潮</span>
+                                    <i>￥78</i>
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="">
+                                    <img src="images/c2-2-13.webp" alt="">
+                                    <span>针织弹力靴女2018新款秋冬单靴韩版中筒靴高跟短靴粗跟瘦瘦靴袜靴</span>
+                                    <i>￥79</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-14.webp" alt="">
+                                    <span>2018新款长靴子女冬季英伦中跟过膝靴加绒骑士靴拉链粗跟长筒马靴</span>
+                                    <i>￥43.3</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-15.webp" alt="">
+                                    <span>靴子女小跟短靴女春秋2018新款粗跟平底马丁靴英伦风短筒韩版百搭短靴女</span>
+                                    <i>￥39.9</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-16.webp" alt="">
+                                    <span>【梵花不语】原创纯色休闲帆布包女双肩包女包抽带学院风旅行背包</span>
+                                    <i>￥187</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-17.webp" alt="">
+                                    <span>2018新款夏天金属镂空链条迷你小方包单肩斜挎韩版晚宴手拿包包女</span>
+                                    <i>￥65</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-18.webp" alt="">
+                                    <span>韩版单肩托特包大包包简约斜挎包购物袋韩国学生休闲女包大容量潮</span>
+                                    <i>￥27</i>
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="">
+                                    <img src="images/c2-2-19.webp" alt="">
+                                    <span>针织弹力靴女2018新款秋冬单靴韩版中筒靴高跟短靴粗跟瘦瘦靴袜靴</span>
+                                    <i>￥71.3</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-20.webp" alt="">
+                                    <span>2018新款长靴子女冬季英伦中跟过膝靴加绒骑士靴拉链粗跟长筒马靴</span>
+                                    <i>￥99.9</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-21.webp" alt="">
+                                    <span>靴子女小跟短靴女春秋2018新款粗跟平底马丁靴英伦风短筒韩版百搭短靴女</span>
+                                    <i>￥41.2</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-22.webp" alt="">
+                                    <span>【梵花不语】原创纯色休闲帆布包女双肩包女包抽带学院风旅行背包</span>
+                                    <i>￥139</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c-2-23.webp" alt="">
+                                    <span>2018新款夏天金属镂空链条迷你小方包单肩斜挎韩版晚宴手拿包包女</span>
+                                    <i>￥47.5</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c-2-24.webp" alt="">
+                                    <span>韩版单肩托特包大包包简约斜挎包购物袋韩国学生休闲女包大容量潮</span>
+                                    <i>￥76</i>
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="">
+                                    <img src="images/c-2-25.webp" alt="">
+                                    <span>针织弹力靴女2018新款秋冬单靴韩版中筒靴高跟短靴粗跟瘦瘦靴袜靴</span>
+                                    <i>￥96</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c-2-26.webp" alt="">
+                                    <span>2018新款长靴子女冬季英伦中跟过膝靴加绒骑士靴拉链粗跟长筒马靴</span>
+                                    <i>￥27</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c-2-27.webp" alt="">
+                                    <span>靴子女小跟短靴女春秋2018新款粗跟平底马丁靴英伦风短筒韩版百搭短靴女</span>
+                                    <i>￥45</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c-2-28.webp" alt="">
+                                    <span>【梵花不语】原创纯色休闲帆布包女双肩包女包抽带学院风旅行背包</span>
+                                    <i>￥73.5</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c-2-29.webp" alt="">
+                                    <span>2018新款夏天金属镂空链条迷你小方包单肩斜挎韩版晚宴手拿包包女</span>
+                                    <i>￥56.7</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c-2-30.webp" alt="">
+                                    <span>韩版单肩托特包大包包简约斜挎包购物袋韩国学生休闲女包大容量潮</span>
+                                    <i>￥137</i>
+                                </a>
+                            </p>
+                        </li>
+                    </ul>
+                    <p></p>
+                </div>
+                <div class="content-right">
+                    <span>热销商品推荐</span>
+                    <a href=""><img src="images/shuaxin.png" alt="">换一批</a>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-1.webp" alt="">
+                                <span>包包女2018新款秋冬百搭复古斜挎包ins超火小方包时尚休闲单肩包手提包小</span>
+                                <i>￥65.00</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-2.webp" alt="">
+                                <span>靴子女2018秋冬季新款系带原宿马丁靴女学生英伦风粗跟复古百搭加绒短靴</span>
+                                <i>￥79.00</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-3.webp" alt="">
+                                <span>二棉鞋女2018新款冬季百搭学生韩版加绒ins帆布鞋高帮板鞋子超火</span>
+                                <i>￥39.90</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-4.webp" alt="">
+                                <span>蓓尔明星同款帆布鞋女ins超火高帮学生布鞋平底系带小白鞋港风情侣鞋女鞋子休闲板鞋</span>
+                                <i>￥69.90</i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-5.webp" alt="">
+                                <span>前拉链短靴女2018秋冬新款百搭拼色女靴子瘦瘦马丁靴加绒机车靴潮</span>
+                                <i>￥79.00</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-6.webp" alt="">
+                                <span>显瘦腿弹力靴子女平底长筒靴2018韩版百搭学生秋冬季新款女鞋英伦风过膝长靴女高跟加绒高筒靴</span>
+                                <i>￥118.00</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-7.webp" alt="">
+                                <span>ins马丁靴子女加绒2018秋冬季新款网红女鞋韩版百搭小短靴短筒袜矮靴</span>
+                                <i>￥62.90</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-8.webp" alt="">
+                                <span>YE蓓尔冬季新款热卖英伦风马丁靴</span>
+                                <i>￥199.00</i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-9.webp" alt="">
+                                <span>迷你小双肩包女韩版包包女斜挎包2018新款百搭毛呢小包背包多用单肩斜挎包ins超火包</span>
+                                <i>￥59.00</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-10.webp" alt="">
+                                <span>街拍网红靴子女2018秋季新款英伦风复古短靴女学生粗跟系带百搭马丁靴</span>
+                                <i>￥79.00</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-11.webp" alt="">
+                                <span>老爹鞋女2018秋冬季新款韩版休闲运动鞋百搭原宿风厚底小白鞋学生跑步鞋ins超火的女鞋子潮</span>
+                                <i>￥88.00</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-12.webp" alt="">
+                                <span>蓓尔明星同款韩版夏季透气小白鞋新款女鞋子蝴蝶结包头半拖帆布鞋女学生百搭系带板鞋</span>
+                                <i>￥59.00</i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-13.webp" alt="">
+                                <span>小包包仙女2018新款潮韩版百搭单肩斜挎包帆布ins超火honey蹦迪包</span>
+                                <i>￥62.50</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-14.webp" alt="">
+                                <span>【梵花不语】2018早春新品日系笑脸印花帆布包女单肩包女包文艺手提袋</span>
+                                <i>￥56.00</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-15.webp" alt="">
+                                <span>【69元任选两双】环球女鞋ins超火的小白鞋子新款韩版休闲鞋百搭女学生板鞋chic秋</span>
+                                <i>￥69.00</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-16.webp" alt="">
+                                <span>蓓尔明星同款秋季韩版百搭小白鞋平底白色系带学生板鞋女鞋运动休闲鞋</span>
+                                <i>￥69.00</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-center">
+                <h3>美妆&个护</h3>
+                <ul>
+                    <li><a href="">补水面膜</a></li>
+                    <li><a href="">保湿套装</a></li>
+                    <li><a href="">遮瑕粉底</a></li>
+                    <li><a href="">斩男口红</a></li>
+                    <li><a href="">洗脸卸妆</a></li>
+                </ul>
+                <div class="content-left">
+                    <ul>
+                        <li><a href=""><img src="images/c4-1.webp" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="content-middle">
+                    <ul>
+                        <li>
+                            <p>
+                                <a href="">
+                                    <img src="images/c2-2-1.webp" alt="">
+                                    <span>针织弹力靴女2018新款秋冬单靴韩版中筒靴高跟短靴粗跟瘦瘦靴袜靴</span>
+                                    <i>￥87</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-2.webp" alt="">
+                                    <span>2018新款长靴子女冬季英伦中跟过膝靴加绒骑士靴拉链粗跟长筒马靴</span>
+                                    <i>￥187</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-3.webp" alt="">
+                                    <span>靴子女小跟短靴女春秋2018新款粗跟平底马丁靴英伦风短筒韩版百搭短靴女</span>
+                                    <i>￥69.9</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-4.webp" alt="">
+                                    <span>【梵花不语】原创纯色休闲帆布包女双肩包女包抽带学院风旅行背包</span>
+                                    <i>￥63.7</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-5.webp" alt="">
+                                    <span>2018新款夏天金属镂空链条迷你小方包单肩斜挎韩版晚宴手拿包包女</span>
+                                    <i>￥67.2</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-6.webp" alt="">
+                                    <span>韩版单肩托特包大包包简约斜挎包购物袋韩国学生休闲女包大容量潮</span>
+                                    <i>￥55</i>
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="">
+                                    <img src="images/c2-2-7.webp" alt="">
+                                    <span>针织弹力靴女2018新款秋冬单靴韩版中筒靴高跟短靴粗跟瘦瘦靴袜靴</span>
+                                    <i>￥80</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-8.webp" alt="">
+                                    <span>2018新款长靴子女冬季英伦中跟过膝靴加绒骑士靴拉链粗跟长筒马靴</span>
+                                    <i>￥47</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-9.webp" alt="">
+                                    <span>靴子女小跟短靴女春秋2018新款粗跟平底马丁靴英伦风短筒韩版百搭短靴女</span>
+                                    <i>￥67.3</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-10.webp" alt="">
+                                    <span>【梵花不语】原创纯色休闲帆布包女双肩包女包抽带学院风旅行背包</span>
+                                    <i>￥112</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-11.webp" alt="">
+                                    <span>2018新款夏天金属镂空链条迷你小方包单肩斜挎韩版晚宴手拿包包女</span>
+                                    <i>￥135</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-12.webp" alt="">
+                                    <span>韩版单肩托特包大包包简约斜挎包购物袋韩国学生休闲女包大容量潮</span>
+                                    <i>￥78</i>
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="">
+                                    <img src="images/c2-2-13.webp" alt="">
+                                    <span>针织弹力靴女2018新款秋冬单靴韩版中筒靴高跟短靴粗跟瘦瘦靴袜靴</span>
+                                    <i>￥79</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-14.webp" alt="">
+                                    <span>2018新款长靴子女冬季英伦中跟过膝靴加绒骑士靴拉链粗跟长筒马靴</span>
+                                    <i>￥43.3</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-15.webp" alt="">
+                                    <span>靴子女小跟短靴女春秋2018新款粗跟平底马丁靴英伦风短筒韩版百搭短靴女</span>
+                                    <i>￥39.9</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-16.webp" alt="">
+                                    <span>【梵花不语】原创纯色休闲帆布包女双肩包女包抽带学院风旅行背包</span>
+                                    <i>￥187</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-17.webp" alt="">
+                                    <span>2018新款夏天金属镂空链条迷你小方包单肩斜挎韩版晚宴手拿包包女</span>
+                                    <i>￥65</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-18.webp" alt="">
+                                    <span>韩版单肩托特包大包包简约斜挎包购物袋韩国学生休闲女包大容量潮</span>
+                                    <i>￥27</i>
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="">
+                                    <img src="images/c2-2-19.webp" alt="">
+                                    <span>针织弹力靴女2018新款秋冬单靴韩版中筒靴高跟短靴粗跟瘦瘦靴袜靴</span>
+                                    <i>￥71.3</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-20.webp" alt="">
+                                    <span>2018新款长靴子女冬季英伦中跟过膝靴加绒骑士靴拉链粗跟长筒马靴</span>
+                                    <i>￥99.9</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-21.webp" alt="">
+                                    <span>靴子女小跟短靴女春秋2018新款粗跟平底马丁靴英伦风短筒韩版百搭短靴女</span>
+                                    <i>￥41.2</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c2-2-22.webp" alt="">
+                                    <span>【梵花不语】原创纯色休闲帆布包女双肩包女包抽带学院风旅行背包</span>
+                                    <i>￥139</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c-2-23.webp" alt="">
+                                    <span>2018新款夏天金属镂空链条迷你小方包单肩斜挎韩版晚宴手拿包包女</span>
+                                    <i>￥47.5</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c-2-24.webp" alt="">
+                                    <span>韩版单肩托特包大包包简约斜挎包购物袋韩国学生休闲女包大容量潮</span>
+                                    <i>￥76</i>
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="">
+                                    <img src="images/c-2-25.webp" alt="">
+                                    <span>针织弹力靴女2018新款秋冬单靴韩版中筒靴高跟短靴粗跟瘦瘦靴袜靴</span>
+                                    <i>￥96</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c-2-26.webp" alt="">
+                                    <span>2018新款长靴子女冬季英伦中跟过膝靴加绒骑士靴拉链粗跟长筒马靴</span>
+                                    <i>￥27</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c-2-27.webp" alt="">
+                                    <span>靴子女小跟短靴女春秋2018新款粗跟平底马丁靴英伦风短筒韩版百搭短靴女</span>
+                                    <i>￥45</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c-2-28.webp" alt="">
+                                    <span>【梵花不语】原创纯色休闲帆布包女双肩包女包抽带学院风旅行背包</span>
+                                    <i>￥73.5</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c-2-29.webp" alt="">
+                                    <span>2018新款夏天金属镂空链条迷你小方包单肩斜挎韩版晚宴手拿包包女</span>
+                                    <i>￥56.7</i>
+                                </a>
+                                <a href="">
+                                    <img src="images/c-2-30.webp" alt="">
+                                    <span>韩版单肩托特包大包包简约斜挎包购物袋韩国学生休闲女包大容量潮</span>
+                                    <i>￥137</i>
+                                </a>
+                            </p>
+                        </li>
+                    </ul>
+                    <p></p>
+                </div>
+                <div class="content-right">
+                    <span>热销商品推荐</span>
+                    <a href=""><img src="images/shuaxin.png" alt="">换一批</a>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-1.webp" alt="">
+                                <span>包包女2018新款秋冬百搭复古斜挎包ins超火小方包时尚休闲单肩包手提包小</span>
+                                <i>￥65.00</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-2.webp" alt="">
+                                <span>靴子女2018秋冬季新款系带原宿马丁靴女学生英伦风粗跟复古百搭加绒短靴</span>
+                                <i>￥79.00</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-3.webp" alt="">
+                                <span>二棉鞋女2018新款冬季百搭学生韩版加绒ins帆布鞋高帮板鞋子超火</span>
+                                <i>￥39.90</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-4.webp" alt="">
+                                <span>蓓尔明星同款帆布鞋女ins超火高帮学生布鞋平底系带小白鞋港风情侣鞋女鞋子休闲板鞋</span>
+                                <i>￥69.90</i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-5.webp" alt="">
+                                <span>前拉链短靴女2018秋冬新款百搭拼色女靴子瘦瘦马丁靴加绒机车靴潮</span>
+                                <i>￥79.00</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-6.webp" alt="">
+                                <span>显瘦腿弹力靴子女平底长筒靴2018韩版百搭学生秋冬季新款女鞋英伦风过膝长靴女高跟加绒高筒靴</span>
+                                <i>￥118.00</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-7.webp" alt="">
+                                <span>ins马丁靴子女加绒2018秋冬季新款网红女鞋韩版百搭小短靴短筒袜矮靴</span>
+                                <i>￥62.90</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-8.webp" alt="">
+                                <span>YE蓓尔冬季新款热卖英伦风马丁靴</span>
+                                <i>￥199.00</i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-9.webp" alt="">
+                                <span>迷你小双肩包女韩版包包女斜挎包2018新款百搭毛呢小包背包多用单肩斜挎包ins超火包</span>
+                                <i>￥59.00</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-10.webp" alt="">
+                                <span>街拍网红靴子女2018秋季新款英伦风复古短靴女学生粗跟系带百搭马丁靴</span>
+                                <i>￥79.00</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-11.webp" alt="">
+                                <span>老爹鞋女2018秋冬季新款韩版休闲运动鞋百搭原宿风厚底小白鞋学生跑步鞋ins超火的女鞋子潮</span>
+                                <i>￥88.00</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-12.webp" alt="">
+                                <span>蓓尔明星同款韩版夏季透气小白鞋新款女鞋子蝴蝶结包头半拖帆布鞋女学生百搭系带板鞋</span>
+                                <i>￥59.00</i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-13.webp" alt="">
+                                <span>小包包仙女2018新款潮韩版百搭单肩斜挎包帆布ins超火honey蹦迪包</span>
+                                <i>￥62.50</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-14.webp" alt="">
+                                <span>【梵花不语】2018早春新品日系笑脸印花帆布包女单肩包女包文艺手提袋</span>
+                                <i>￥56.00</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-15.webp" alt="">
+                                <span>【69元任选两双】环球女鞋ins超火的小白鞋子新款韩版休闲鞋百搭女学生板鞋chic秋</span>
+                                <i>￥69.00</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/c2-3-16.webp" alt="">
+                                <span>蓓尔明星同款秋季韩版百搭小白鞋平底白色系带学生板鞋女鞋运动休闲鞋</span>
+                                <i>￥69.00</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- lovely猜你喜欢 -->
+        <div class="lovely">
+            <div class="lovely-center">
+                <h3>猜你喜欢</h3>
+                <p>
+                    <a href="">
+                        <span><img src="images/l1.webp" alt=""></span>
+                        <span>找相似</span>
+                        <span>
+                            相宜本草芯净化妆品套装 补水控油保湿清爽不油男女学生正品护肤
+                            <img src="" alt="">
+                        </span>
+                        <i>￥119</i>
+                        <i>￥256</i>
+                        <span><img src="images/shoucang.png" alt="">123</span>
+                    </a>
+                    <a href="">
+                        <span><img src="images/l2.webp" alt=""></span>
+                        <span>找相似</span>
+                        <span>
+                            内增高运动鞋女2018秋季新款网红韩版百搭厚底小白鞋学生ulzzang休闲鞋
+                            <img src="" alt="">
+                        </span>
+                        <i>￥89</i>
+                        <i>￥127.15</i>
+                        <span><img src="images/shoucang.png" alt="">75</span>
+                    </a>
+                    <a href="">
+                        <span><img src="images/l3.webp" alt=""></span>
+                        <span>找相似</span>
+                        <span>
+                            ulzzang褶皱半身裙女早秋新款chic高腰韩版中长款A字裙大摆裙伞裙
+                            <img src="" alt="">
+                        </span>
+                        <i>￥48</i>
+                        <i>￥70</i>
+                        <span><img src="images/shoucang.png" alt="">326</span>
+                    </a>
+                    <a href="">
+                        <span><img src="images/l4.webp" alt=""></span>
+                        <span>找相似</span>
+                        <span>
+                            毛线针织雪地靴女加绒保暖蝴蝶结防滑中筒靴2018韩版秋冬新款百搭学生chic短靴潮
+                            <img src="" alt="">
+                        </span>
+                        <i>￥105</i>
+                        <i>￥150</i>
+                        <span><img src="images/shoucang.png" alt="">78</span>
+                    </a>
+                    <a href="">
+                        <span><img src="images/l5.webp" alt=""></span>
+                        <span>找相似</span>
+                        <span>
+                            【明星款送化妆刷5支】超火大理石盘网红16色眼影盘防水珠光眼影盘大地色哑光裸妆韩国懒人眼影
+                            <img src="images/guanggao.png" alt="">
+                        </span>
+                        <i>￥29</i>
+                        <i>￥99</i>
+                        <span><img src="images/shoucang.png" alt="">449</span>
+                    </a>
+                    <a href="">
+                        <span><img src="images/l6.webp" alt=""></span>
+                        <span>找相似</span>
+                        <span>
+                            2018春季新款小白鞋女厚底松糕鞋百搭韩版高帮鞋女街拍休闲鞋单鞋
+                            <img src="" alt="">
+                        </span>
+                        <i>￥120</i>
+                        <i>￥171.43</i>
+                        <span><img src="images/shoucang.png" alt="">56</span>
+                    </a>
+                    <a href="">
+                        <span><img src="images/l7.webp" alt=""></span>
+                        <span>找相似</span>
+                        <span>
+                            针织半身裙潮2018秋冬新款韩版高腰宽松显瘦A字裙时尚chic港味纯色简约休闲百搭荷叶边裙
+                            <img src="" alt="">
+                        </span>
+                        <i>￥73.5</i>
+                        <i>￥125</i>
+                        <span><img src="images/shoucang.png" alt="">372</span>
+                    </a>
+                    <a href="">
+                        <span><img src="images/l8.webp" alt=""></span>
+                        <span>找相似</span>
+                        <span>
+                            御泥坊清爽睡眠4件化妆品套装 护肤品套装控油补水保湿收毛孔
+                            <img src="" alt="">
+                        </span>
+                        <i>￥79</i>
+                        <i>￥268.7</i>
+                        <span><img src="images/shoucang.png" alt="">69</span>
+                    </a>
+                    <a href="">
+                        <span><img src="images/l9.webp" alt=""></span>
+                        <span>找相似</span>
+                        <span>
+                            小p店铺定制 冬季新款可爱卷羊毛个性雪地靴冬保暖毛毛鞋平底短靴子女
+                            <img src="" alt="">
+                        </span>
+                        <i>￥119</i>
+                        <i>￥170</i>
+                        <span><img src="images/shoucang.png" alt="">101</span>
+                    </a>
+                    <a href="">
+                        <span><img src="images/l10.webp" alt=""></span>
+                        <span>找相似</span>
+                        <span>
+                            秋冬韩国权志龙同款针织帽情侣忙着可爱刺绣毛线帽子女韩版保暖帽潮男小姐姐趣味字刺绣毛线帽
+                            <img src="images/remai.png" alt="">
+                        </span>
+                        <i>￥14</i>
+                        <span><img src="images/shoucang.png" alt="">3961</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <!-- footer底部 -->
+        <div class="footer">
+            <div class="footer-center">
+                <a href=""><img src="images/logo.png" alt=""></a>
+                <dl>
+                    <dt>新手帮助</dt>
+                    <dd>
+                        <a href="">常见问题</a>
+                        <a href="">自助服务</a>
+                        <a href="">联系客服</a>
+                        <a href="">意见反馈</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>权益保障</dt>
+                    <dd>
+                        <a href="">全国包邮</a>
+                        <a href="">7天无理由退货</a>
+                        <a href="">退货运费补贴</a>
+                        <a href="">限时发货</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd>
+                        <a href="">微信支付</a>
+                        <a href="">支付宝</a>
+                        <a href="">白付美支付</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>移动客户端下载</dt>
+                    <dd>
+                        <a href=""><img src="images/erweima.png" alt="">蘑菇街</a>
+                        <a href=""><img src="images/erweima2.png" alt="">美丽说</a>
+                        <a href=""><img src="images/erweima3.png" alt="">uni引力</a>
+                    </dd>
+                </dl>
+                <p>
+                    <a href="">关于我们</a>
+                    <a href="">招聘信息</a>
+                    <a href="">联系我们</a>
+                    <a href="">商家入驻</a>
+                    <a href="">商家后台</a>
+                    <a href="">蘑菇商学院</a>
+                    <a href="">商家社区</a>
+                    <a href="">规则中心</a>
+                    <a href="">有害信息举报</a>
+                    <a href="">用户隐私保护</a>
+                </p>
+                <div class="license">
+                    <span>©2018 Mogujie.com 杭州卷瓜网络有限公司</span>
+                    <p>
+                        <span>营业执照：<a href="">913301065526808764</a></span>
+                        <span>网络文化经营许可证：<a href="">浙网文（2016）0349-219号</a></span>
+                        <span>增值电信业务经营许可证：<a href="">浙B2-20110349</a></span>
+                        <span><a href="">安全责任书</a></span>
+                        <span><a href="">浙公网安备 33010602002329号</a></span>
+                    </p>
+                    <p>
+                        <span>互联网药品信息服务资格证书编号：<a href="">（浙)-经营性-2018-0002</a></span>
+                        <span><a href="">浙网食A33010003</a></span>
+                        <span><a href="">出版物网络交易平台服务经营备案证</a></span>
+                        <span><a href="">（浙）网械平台备字[2018]第00006号</a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- sidebar侧栏 -->
+        <div class="sidebar">
+            <a href=""><img src="images/yingyong.png" alt=""><span><img src="images/app.png" alt=""></span></a>
+            <ul>
+                <li><a href="">首页</a></li>
+                <li><a href="">优惠劵</a></li>
+                <li><a href="">钱包</a></li>
+                <li>
+                    <a href="">客户服务</a>
+                    <ul>
+                        <li><a href="">消费者服务</a></li>
+                        <li><a href="">商家服务</a></li>
+                        <li><a href="">规则中心</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">商家后台</a>
+                    <ul>
+                        <li><a href="">管理后台</a></li>
+                        <li><a href="">商家社区</a></li>
+                        <li><a href="">商家培训</a></li>
+                        <li><a href="">市场入住</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="javascript:;">TOP</a>
+        </div>
+    </div>
+</body>
+</html>
