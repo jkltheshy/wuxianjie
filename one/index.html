@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>一号店</title>
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+	<!-- <script src="jquery/jquery-3.3.1.js"></script>
+	<script>
+	$(function()
+	{
+		$(".sou").click(function(e)
+		{
+			e.preventDefault();
+			$(".sou").css("background","#fff");
+			$(".suoou").show();
+		})
+	})
+	</script> -->
+	<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+	<div class="pagebody">	
+		<div class="top">
+			<div class="top-main">
+				<div class="tople">
+					<ul>
+						<li class="sou">
+								<a href=""><i class="iconfont icon-dizhizhuanhuan"></i>送货地址 ：上海</a>
+								<div class="suoou">
+										<a href="" id="qx">X</a>
+								<div class="sumain">
+									<div class="search">
+										<span>搜索城市:</span>
+										<div class="city">
+											<input type="text" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请输入城市名称">
+										</div>
+									</div>
+									<div class="hot">
+										<span>热门城市:</span>
+										<div class="hotcity">
+											<a href="">上海市</a>
+											<a href="">北京市</a>
+											<a href="">广州市</a>
+											<a href="">深圳市</a>
+											<a href="">南京市</a>
+											<a href="">杭州市</a>
+											<a href="">武汉市</a>
+											<a href="">成都市</a>
+											<a href="">重庆市</a>
+											<a href="">苏州市</a>
+											<a href="">天津市</a>
+											<a href="">合肥市</a>
+											<a href="">温州市</a>
+											<a href="">无锡市</a>
+											<a href="">宁波市</a>
+											<a href="">常州市</a>
+										</div>
+									</div>
+								</div>
+								</div>
+						</li>
+						<li><a href=""><i class="iconfont icon-yewuyeicon16"></i>1号店金币过期公告</a></li>
+					</ul>
+				</div>
+				<div class="topri">
+						<ul>
+							<li>早上好,请 <a href="">登入</a></li>
+							<li><a href="">注册</a></li>
+							<li><a href=""><i class="iconfont icon-ren"></i>会员俱乐部</a></li>
+							<li><a href=""><i class="iconfont icon-gouwuchexiadan"></i>我的订单</a></li>
+						</ul>
+				</div>
+			</div>
+			<div class="header">
+			<div class="header-main">
+				<div class="header-logo">
+					<a href=""><img src="images/1.png" alt=""></a><a href=""><img src="images/2.png" alt=""></a>
+				</div>
+				<div class="header-right">
+						<input type="text" placeholder="打印纸">
+						<button type="button"><i class="iconfont icon-fangdajing"></i></button>
+					<ul>
+						<li><a href="">鹅毛被</a></li>
+						<li><a href="">毛被套</a></li>
+						<li><a href="">奔富</a></li>
+						<li><a href="">长米粒</a></li>
+						<li><a href="">冷藏冰柜</a></li>
+						<li><a href="">苹果8</a></li>
+						<li><a href="">40寸彩电</a></li>
+					</ul>
+				</div>
+				<div class="shop">
+						<a href="">
+						<i class="iconfont icon-gouwuche"></i>
+						<span>购物车</span>
+						</a>
+					</div>
+					<div class="header-bottom">
+					<div class="category">
+						<i class="iconfont icon-menu"></i>
+						<span>全部类品</span>
+						<i class="iconfont icon-icon_up_arrow"></i>
+						<div class="catelist"></div>
+					</div>
+					<div class="catemain">
+					</div>
+					<div class="nav-list">
+						<ul>
+							<li><a href="">领金币</a></li>
+							<li><a href="">领劵中心</a></li>
+							<li><a href="">充值</a></li>
+							<li><a href="">超级单品</a></li>
+							<li><a href="">超级品牌</a></li>
+							<li><a href="">超级品类</a></li>
+						</ul>
+					</div>
+					</div>
+			</div>
+			</div>
+			<div class="lunbo">
+			<div class="lunbp">
+				<ul id="lb">
+					<li id="first"><a href=""><div style="background-image: url(images/1.jpg);"></div></a></li>
+					<li><a href=""><div style="background-image: url(images/2.jpg)"></div></a></li>
+				</ul>
+			</div>
+			<div class="ol">
+				<div class="olist">
+					<span id="cur">生活用品</span>
+					<span>零食饮食</span>
+				</div>
+			</div>
+			</div>
+			<div class="djs">
+				<div class="red-black">
+					<div class="djs-main">
+						<ul>
+							<li class="mian-one"><a href="">
+								<img src="images/4.png" alt="">
+								<div class="main-text">
+									<span>限时 限量 品质 超值</span>
+									<span></span>
+								</div>
+								<div class="main-djs">
+									<div class="clock">
+										<i class="iconfont icon-noun__cc"></i>
+										<span>距结束仅剩</span>
+									</div>
+									<div class="clockdjs">
+										<span></span>
+	        							<b>:</b>
+										<span></span>
+			    						<b>:</b>
+										<span></span>
+									</div>
+								</div>
+							</a></li>
+							<li class="main-tow">
+								<img src="images/4.jpg" alt="">
+								<div class="tow">
+									<div class="tow-main">微星(msi)冲锋坦克GL63 15.6英寸游戏本笔记本电脑(i7-8750H 8G 1T+128G SSD RTX2060 6G 赛睿键盘 IPS 黑)</div>
+									<div class="jd"></div>
+									<span>￥9469</span>
+								</div>
+							</li>
+							
+							<li class="main-tow">
+									<img src="images/4.jpg" alt="">
+									<div class="tow">
+										<div class="tow-main">微星(msi)冲锋坦克GL63 15.6英寸游戏本笔记本电脑(i7-8750H 8G 1T+128G SSD RTX2060 6G 赛睿键盘 IPS 黑)</div>
+										<div class="jd"></div>
+										<span>￥9469</span>
+									</div>
+								</li>
+								
+							<li class="main-tow">
+									<img src="images/4.jpg" alt="">
+									<div class="tow">
+										<div class="tow-main">微星(msi)冲锋坦克GL63 15.6英寸游戏本笔记本电脑(i7-8750H 8G 1T+128G SSD RTX2060 6G 赛睿键盘 IPS 黑)</div>
+										<div class="jd"></div>
+										<span>￥9469</span>
+									</div>
+								</li>
+								
+							<li class="main-tow">
+									<img src="images/4.jpg" alt="">
+									<div class="tow">
+										<div class="tow-main">微星(msi)冲锋坦克GL63 15.6英寸游戏本笔记本电脑(i7-8750H 8G 1T+128G SSD RTX2060 6G 赛睿键盘 IPS 黑)</div>
+										<div class="jd"></div>
+										<span>￥9469</span>
+									</div>
+								</li>
+								
+							<li class="main-tow">
+									<img src="images/4.jpg" alt="">
+									<div class="tow">
+										<div class="tow-main">微星(msi)冲锋坦克GL63 15.6英寸游戏本笔记本电脑(i7-8750H 8G 1T+128G SSD RTX2060 6G 赛睿键盘 IPS 黑)</div>
+										<div class="jd"></div>
+										<span>￥9469</span>
+									</div>
+								</li>
+								
+							<li class="main-tow">
+									<img src="images/4.jpg" alt="">
+									<div class="tow">
+										<div class="tow-main">微星(msi)冲锋坦克GL63 15.6英寸游戏本笔记本电脑(i7-8750H 8G 1T+128G SSD RTX2060 6G 赛睿键盘 IPS 黑)</div>
+										<div class="jd"></div>
+										<span>￥9469</span>
+									</div>
+								</li>
+								
+							<li class="main-tow">
+									<img src="images/4.jpg" alt="">
+									<div class="tow">
+										<div class="tow-main">微星(msi)冲锋坦克GL63 15.6英寸游戏本笔记本电脑(i7-8750H 8G 1T+128G SSD RTX2060 6G 赛睿键盘 IPS 黑)</div>
+										<div class="jd"></div>
+										<span>￥9469</span>
+									</div>
+								</li>
+								
+							<li class="main-tow">
+									<img src="images/4.jpg" alt="">
+									<div class="tow">
+										<div class="tow-main">微星(msi)冲锋坦克GL63 15.6英寸游戏本笔记本电脑(i7-8750H 8G 1T+128G SSD RTX2060 6G 赛睿键盘 IPS 黑)</div>
+										<div class="jd"></div>
+										<span>￥9469</span>
+									</div>
+								</li>
+								
+							<li class="main-tow">
+									<img src="images/4.jpg" alt="">
+									<div class="tow">
+										<div class="tow-main">微星(msi)冲锋坦克GL63 15.6英寸游戏本笔记本电脑(i7-8750H 8G 1T+128G SSD RTX2060 6G 赛睿键盘 IPS 黑)</div>
+										<div class="jd"></div>
+										<span>￥9469</span>
+									</div>
+								</li>
+						</ul>
+					</div>
+				</div>
+				<div class="sm">
+				</div>
+			</div>
+			<div class="cjpp">
+				<div class="cj-list">
+					<div class="cjleft">
+						<div class="cj-cj cj-f">
+							<a href="">
+								<span class="bu">超级品牌</span>
+							  <span>&nbsp;/&nbsp;超级品牌/精品汇聚</span>
+							</a>
+						</div>
+						<div class="jrth">
+							<img src="images/5.jpg" alt="">
+							<div class="jrth coverage"></div>
+							<div class="snacks-logo">
+								<img src="images/6.jpg" alt="">
+								<div class="logo-re"></div>
+							</div>
+							<div class="snacks-explain">
+								<div>乐事</div>
+								<div>节日特惠</div>
+								<div class="entrance">
+									进入
+									<i></i>
+								</div>
+							</div>
+							<div class="snacks one">
+								<img src="images/7.jpg" alt="" class="yd">
+							</div>
+							<div class="snacks tow">
+								<img src="images/8.jpg" alt="" class="yd">
+							</div>
+							<div class="snacks three">
+								<img src="images/9.jpg" alt="" class="yd">
+							</div>
+						</div>
+						<div class="jrth djlx">
+							<img src="images/10.jpg" alt="">
+							<div class="jrth coverage"></div>
+							<div class="snacks-logo">
+								<img src="images/11.jpg" alt="">
+								<div class="logo-re"></div>
+							</div>
+							<div class="snacks-explain">
+								<div>蓝月亮</div>
+								<div>低价来袭</div>
+								<div class="entrance">
+									进入
+									<i></i>
+								</div>
+							</div>
+							<div class="snacks one">
+								<img src="images/12.jpg" alt="" class="yd">
+							</div>
+							<div class="snacks tow">
+								<img src="images/13.jpg" alt="" class="yd">
+							</div>
+							<div class="snacks three">
+								<img src="images/14.jpg" alt="" class="yd">
+							</div>
+						</div>
+				    </div>
+				</div>
+				<div class="cj-list cj-m">
+					<div class="cjleft">
+						<div class="cj-cj">
+							<a href="">
+								<span class="yel">超级品牌</span>
+								<span>&nbsp;/&nbsp;超级品牌/精品汇聚</span>
+							</a>
+						</div>
+						<div class="jrth">
+							<img src="images/15.jpg" alt="">
+							<div class="jrth coverage"></div>
+							<div class="snacks-explain second">
+								<div>家清纸品专场</div>
+								<div>节日特惠</div>
+								<div class="entrance">
+									进入
+									<i></i>
+								</div>
+							</div>
+							<div class="snacks one">
+								<img src="images/16.jpg" alt="" class="yd">
+							</div>
+							<div class="snacks tow">
+								<img src="images/17.jpg" alt="" class="yd">
+							</div>
+							<div class="snacks three">
+								<img src="images/18.jpg" alt="" class="yd">
+							</div>
+						</div>
+						<div class="jrth djlx">
+							<img src="images/19.jpg" alt="">
+							<div class="jrth coverage"></div>
+							<div class="snacks-explain second">
+								<div>牛奶速食秒杀专场</div>
+								<div>低价来袭</div>
+								<div class="entrance">
+									进入
+									<i></i>
+								</div>
+							</div>
+							<div class="snacks one">
+								<img src="images/20.jpg" alt="" class="yd">
+							</div>
+							<div class="snacks tow">
+								<img src="images/21.jpg" alt="" class="yd">
+							</div>
+							<div class="snacks three">
+								<img src="images/22.jpg" alt="" class="yd">
+							</div>
+						</div>
+				    </div>
+				</div>
+			</div>
+			<div class="splb">
+					<div class="import-left">
+							<div class="cj-cj pzjk">
+									<a href="">
+										<span class="bu">品质进口</span>
+										<span>&nbsp;/&nbsp;给你完美生活</span>
+									</a>
+							</div>
+							<div class="lb">
+								<div class="list-left">
+									<img src="images/23.jpg" alt="">
+									<div class="list">
+										<a>进口饼干</a><a>进口牛奶</a><a>进口水</a><a>进口糖巧</a><a>葡萄酒</a><a>进口油</a>
+									</div>
+								</div>
+								<div class="list-right">
+										<div class="pk">
+											<a href="">
+												<span>进口休闲零食</span>
+												<span>爆款直降</span>
+												<div>点击进入</div>
+												<img src="images/5.png" alt="" class="yd">
+											</a>
+										</div>
+										<div class="bk">
+											<a href="">
+												<span>进口饼干</span>
+												<span>超值满减</span>
+												<img src="images/24.jpg" alt="" class="yd">
+											</a>
+										</div>
+										<div class="bk nn">
+											<a href="">
+												<span>进口牛奶</span>
+												<span>领劵满减</span>
+												<img src="images/25.jpg" alt="" class="yd">
+											</a>
+										</div>
+										<div class="bk">
+											<a href="">
+												<span>进口洋酒</span>
+												<span>2件立减</span>
+												<img src="images/26.jpg" alt="" class="yd">
+											</a>
+										</div>
+										<div class="bk">
+											<a href="">
+												<span>进口米饭</span>
+												<span>满减满减</span>
+												<img src="images/27.jpg" alt="" class="yd">
+											</a>
+										</div>
+										<div class="pk">
+											<a href="">
+												<span>日本美妆</span>
+												<span>低至5折</span>
+												<div>点击进入</div>
+												<img src="images/28.png" alt="" class="yd">
+											</a>
+										</div>
+								</div>
+							</div>
+					</div>
+					<div class="import-right">
+							<img src="images/6.png" alt="">
+							<div class="xtop">
+								 <span>进口食品销售榜</span>
+						     <span>爆款热卖 实时更新</span>
+							</div>
+							<div class="qua">
+                 <div class="qua-cen">
+									 <ul>
+										 <a href="">
+											 <li>
+												 <div class="yeo">TOP1</div>
+												 <img src="images/29.jpg" alt="">
+											 </li>
+										 </a>
+										 <a href="">
+											 <li>
+													<div class="ybai">TOP2</div>
+													<img src="images/30.jpg" alt="">
+											 </li>
+										 </a>
+										 <a href="">
+											 <li>
+													<div class="jh">TOP3</div>
+													<img src="images/31.jpg" alt="">
+											 </li>
+										 </a>
+									 </ul>
+								 </div>
+							</div>
+							<span class="xleft">
+								<i class="iconfont icon-direction-left"></i>
+							</span>
+							<span class="xright">
+								<i class="iconfont icon-xiangzuo-copy"></i>
+							</span>
+					</div>
+			</div>
+			<div class="splb">
+					<div class="import-left">
+							<div class="cj-cj zxhx">
+									<a href="">
+										<span class="bu">甄选新鲜</span>
+										<span>&nbsp;/&nbsp;每一口都是小幸福</span>
+									</a>
+							</div>
+							<div class="lb">
+								<div class="list-left">
+									<img src="images/32.jpg" alt="">
+									<div class="list">
+										<a>美味水果</a><a>海鲜水产</a><a>新鲜蔬菜</a><a>猪牛羊肉</a><a>冷冻食品</a><a>乳品冷饮</a>
+									</div>
+								</div>
+								<div class="list-right">
+										<div class="pk sx">
+											<a href="">
+												<span>活色生鲜节</span>
+												<span>部分领劵满减</span>
+												<div>立即购买</div>
+												<img src="images/7.png" alt="" class="yd">
+											</a>
+										</div>
+										<div class="bk">
+											<a href="">
+												<span>进口牛油果</span>
+												<span>￥29.9</span>
+												<img src="images/33.jpg" alt="" class="yd">
+											</a>
+										</div>
+										<div class="bk nn">
+											<a href="">
+												<span>泰国黑虎虾</span>
+												<span>￥129</span>
+												<img src="images/34.jpg" alt="" class="yd">
+											</a>
+										</div>
+										<div class="bk">
+											<a href="">
+												<span>恒都澳洲牛腩</span>
+												<span>￥26.8</span>
+												<img src="images/35.jpg" alt="" class="yd">
+											</a>
+										</div>
+										<div class="bk">
+											<a href="">
+												<span>进口米饭</span>
+												<span>满减满减</span>
+												<img src="images/27.jpg" alt="" class="yd">
+											</a>
+										</div>
+										<div class="pk sx">
+											<a href="">
+												<span>天润浓缩酸奶</span>
+												<span>￥55</span>
+												<div>立即购买</div>
+												<img src="images/37.png" alt="" class="yd">
+											</a>
+										</div>
+								</div>
+							</div>
+					</div>
+					<div class="import-right">
+							<img src="images/6.png" alt="">
+							<div class="xtop">
+								 <span>唇唇欲动</span>
+						     <span>胃之所向 皆美好</span>
+							</div>
+							<div class="qua">
+                 <div class="qua-cen">
+									 <ul>
+										 <a href="">
+											 <li>
+												 <div class="yeo">TOP1</div>
+												 <img src="images/37.jpg" alt="">
+											 </li>
+										 </a>
+										 <a href="">
+											 <li>
+													<div class="ybai">TOP2</div>
+													<img src="images/38.jpg" alt="">
+											 </li>
+										 </a>
+										 <a href="">
+											 <li>
+													<div class="jh">TOP3</div>
+													<img src="images/39.jpg" alt="">
+											 </li>
+										 </a>
+									 </ul>
+								 </div>
+							</div>
+							<span class="xleft">
+								<i class="iconfont icon-direction-left"></i>
+							</span>
+							<span class="xright">
+								<i class="iconfont icon-xiangzuo-copy"></i>
+							</span>
+					</div>
+			</div>
+			<div class="splb">
+					<div class="import-left">
+							<div class="cj-cj jznr">
+									<a href="">
+										<span class="bu">精致女人</span>
+										<span>&nbsp;/&nbsp;做完美的自己</span>
+									</a>
+							</div>
+							<div class="lb">
+								<div class="list-left">
+									<img src="images/40.jpg" alt="">
+									<div class="list">
+										<a>口红</a><a>女装</a><a>女包</a><a>卸妆洁面</a><a>香气盎然</a>
+									</div>
+								</div>
+								<div class="list-right">
+										<div class="pk hx">
+											<a href="">
+												<span>护肤品</span>
+												<span>爆款直降</span>
+												<div>点击进入</div>
+												<img src="images/38.png" alt="" class="yd">
+											</a>
+										</div>
+										<div class="bk">
+											<a href="">
+												<span>奥迪粉色唇蜜</span>
+												<span>￥300</span>
+												<img src="images/42.jpg" alt="" class="yd">
+											</a>
+										</div>
+										<div class="bk nn">
+											<a href="">
+												<span>滋源 seeyoung</span>
+												<span>￥99</span>
+												<img src="images/43.jpg" alt="" class="yd">
+											</a>
+										</div>
+										<div class="bk">
+											<a href="">
+												<span>范斯哲香水</span>
+												<span>￥299</span>
+												<img src="images/44.jpg" alt="" class="yd">
+											</a>
+										</div>
+										<div class="bk">
+											<a href="">
+												<span>雅诗兰黛眼霜</span>
+												<span>￥590</span>
+												<img src="images/45.jpg" alt="" class="yd">
+											</a>
+										</div>
+										<div class="pk hx">
+											<a href="">
+												<span>彩妆</span>
+												<span>爆款直降</span>
+												<div>点击进入</div>
+												<img src="images/46.png" alt="" class="yd">
+											</a>
+										</div>
+								</div>
+							</div>
+					</div>
+					<div class="import-right">
+							<img src="images/6.png" alt="">
+							<div class="xtop">
+								 <span>面膜热销排行榜</span>
+						     <span>爆款热卖 实时更新</span>
+							</div>
+							<div class="qua">
+                 <div class="qua-cen">
+									 <ul>
+										 <a href="">
+											 <li>
+												 <div class="yeo">TOP1</div>
+												 <img src="images/47.jpg" alt="">
+											 </li>
+										 </a>
+										 <a href="">
+											 <li>
+													<div class="ybai">TOP2</div>
+													<img src="images/48.jpg" alt="">
+											 </li>
+										 </a>
+										 <a href="">
+											 <li>
+													<div class="jh">TOP3</div>
+													<img src="images/49.jpg" alt="">
+											 </li>
+										 </a>
+									 </ul>
+								 </div>
+							</div>
+							<span class="xleft">
+								<i class="iconfont icon-direction-left"></i>
+							</span>
+							<span class="xright">
+								<i class="iconfont icon-xiangzuo-copy"></i>
+							</span>
+					</div>
+			</div>
+			<div class="splb">
+					<div class="import-left">
+							<div class="cj-cj kjzg">
+									<a href="">
+										<span class="bu">科技质感</span>
+										<span>&nbsp;/&nbsp;营造美好生活</span>
+									</a>
+							</div>
+							<div class="lb">
+								<div class="list-left">
+									<img src="images/50.jpg" alt="">
+									<div class="list">
+										<a>热销手机</a><a>轻薄电脑</a><a>厨房电器</a><a>生活电器</a><a>娱乐影音</a><a href="">办公设备</a>
+									</div>
+								</div>
+								<div class="list-right">
+										<div class="pk pl">
+											<a href="">
+												<span>大牌让利</span>
+												<span>爆款直降</span>
+												<div>立即购买</div>
+												<img src="images/51.png" alt="" class="yd">
+											</a>
+										</div>
+										<div class="bk">
+											<a href="">
+												<span>荣耀全屏手机</span>
+												<span>￥999</span>
+												<img src="images/52.jpg" alt="" class="yd">
+											</a>
+										</div>
+										<div class="bk nn">
+											<a href="">
+												<span>小米平衡车</span>
+												<span>￥1999</span>
+												<img src="images/53.jpg" alt="" class="yd">
+											</a>
+										</div>
+										<div class="bk">
+											<a href="">
+												<span>博朗剃须刀</span>
+												<span>￥329</span>
+												<img src="images/54.jpg" alt="" class="yd">
+											</a>
+										</div>
+										<div class="bk">
+											<a href="">
+												<span>佳能单反套机</span>
+												<span>￥4999</span>
+												<img src="images/55.jpg" alt="" class="yd">
+											</a>
+										</div>
+										<div class="pk pl">
+											<a href="">
+												<span>家电狂欢</span>
+												<span>爆款直降</span>
+												<div>立即购买</div>
+												<img src="images/56.png" alt="" class="yd">
+											</a>
+										</div>
+								</div>
+							</div>
+					</div>
+					<div class="import-right">
+							<img src="images/6.png" alt="">
+							<div class="xtop">
+								 <span>手机通讯</span>
+						     <span>狂欢就要大视野</span>
+							</div>
+							<div class="qua">
+                 <div class="qua-cen">
+									 <ul>
+										 <a href="">
+											 <li>
+												 <div class="yeo">TOP1</div>
+												 <img src="images/57.jpg" alt="">
+											 </li>
+										 </a>
+										 <a href="">
+											 <li>
+													<div class="ybai">TOP2</div>
+													<img src="images/58.jpg" alt="">
+											 </li>
+										 </a>
+										 <a href="">
+											 <li>
+													<div class="jh">TOP3</div>
+													<img src="images/59.jpg" alt="">
+											 </li>
+										 </a>
+									 </ul>
+								 </div>
+							</div>
+							<span class="xleft">
+								<i class="iconfont icon-direction-left"></i>
+							</span>
+							<span class="xright">
+								<i class="iconfont icon-xiangzuo-copy"></i>
+							</span>
+					</div>
+			</div>
+			<div class="know">
+				<div class="ttitle">
+					<img src="images/57.png" alt="">
+					<span>可能比你自己更懂你</span>
+				</div>
+				<div class="know-list">
+					<ul class="know-sp">
+						<li>
+							<a href="">
+								<img src="images/60.jpg" alt="">
+								<div class="data">
+									<p>蒙奇奇 数据线苹果充电线手机快充头电源充电器线 iphone6s/7Plus/8/x/xs/ipad 牛仔蓝1.20米【经典快充版】蒙奇奇原装正品</p>
+									<span>￥29.9</span>
+								</div>
+							</a>
+							<div class="data-hov">
+								<div class="le">
+									<a href="">
+										<i class="iconfont icon-gouwuche"></i>
+									</a>
+								</div>
+								<div class="ri">
+									<a href="">
+										找相似
+									</a>
+								</div>
+							</div>
+					  </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="jss/main.js"></script>
+</body>
+</html>
